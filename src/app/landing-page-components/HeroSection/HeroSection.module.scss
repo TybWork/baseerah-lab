@@ -1,0 +1,367 @@
+.hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(410px, 1.1fr);
+  align-items: center;
+  gap: var(--spacing-7xl);
+  max-width: 1440px;
+  min-height: 640px;
+  margin: 0 auto;
+  padding: 58px var(--mainPadding) 72px;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      ellipse at 82% 55%,
+      rgba(84, 153, 136, 0.12),
+      transparent 38%
+    ),
+    var(--color-neutral-25);
+}
+
+// ==========================================
+// HERO CONTENT
+// ==========================================
+
+.heroCopy {
+  position: relative;
+  z-index: 1;
+  max-width: 540px;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  color: var(--color-brand-600);
+  font-size: 11px;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 1.45px;
+}
+
+.eyebrowDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-warning-400);
+}
+
+.hero h1 {
+  margin-top: var(--spacing-4xl);
+  color: var(--color-neutral-900);
+  font-size: clamp(54px, 6.1vw, 82px);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: -4px;
+  line-height: 0.99;
+}
+
+.hero h1 span {
+  color: var(--color-brand-500);
+  font-size: inherit;
+}
+
+.heroDescription {
+  max-width: 440px;
+  margin-top: var(--spacing-3xl);
+  color: var(--color-neutral-600);
+  font-size: var(--text-lg);
+  line-height: 1.75;
+}
+
+// ==========================================
+// HERO ACTIONS
+// ==========================================
+
+.heroActions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3xl);
+  margin-top: var(--spacing-4xl);
+}
+
+.primaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-lg);
+  min-height: 52px;
+  padding: 0 22px;
+  border-radius: 999px;
+  background: var(--color-brand-500);
+  color: var(--color-white);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-semibold);
+  text-decoration: none;
+  box-shadow: 0 10px 24px rgba(0, 103, 78, 0.16);
+  transition:
+    transform 160ms ease,
+    background 160ms ease;
+}
+
+.primaryButton:hover {
+  transform: translateY(-2px);
+  background: var(--color-brand-700);
+}
+
+.textLink {
+  color: var(--color-neutral-700);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+}
+
+.textLink span {
+  margin-left: var(--spacing-xs);
+  color: var(--color-brand-500);
+}
+
+// ==========================================
+// HERO NOTE
+// ==========================================
+
+.heroNote {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+  margin-top: 52px;
+  color: var(--color-neutral-500);
+  font-size: var(--text-xs);
+}
+
+.avatarStack {
+  display: flex;
+  padding-left: 5px;
+}
+
+.avatarStack i {
+  display: grid;
+  width: 27px;
+  height: 27px;
+  margin-left: -5px;
+  place-items: center;
+  border: 2px solid var(--color-neutral-25);
+  border-radius: 50%;
+  background: var(--color-brand-100);
+  color: var(--color-brand-800);
+  font-size: 11px;
+  font-style: normal;
+}
+
+.avatarStack i:nth-child(2) {
+  background: var(--color-warning-100);
+}
+
+.avatarStack i:nth-child(3) {
+  background: var(--color-brand-200);
+}
+
+// ==========================================
+// HERO VISUAL
+// ==========================================
+
+.heroVisual {
+  position: relative;
+  display: flex;
+  min-height: 600px;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroOrb {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border: 1px solid rgba(0, 103, 78, 0.1);
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(0, 103, 78, 0.12),
+    rgba(0, 103, 78, 0) 69%
+  );
+
+  &::before,
+  &::after {
+    position: absolute;
+    border: 1px solid rgba(0, 103, 78, 0.08);
+    border-radius: 50%;
+    content: "";
+  }
+
+  &::before {
+    inset: 30px;
+  }
+
+  &::after {
+    inset: 65px;
+  }
+}
+
+// ==========================================
+// ACTUAL BASEERAH PHONE MOCKUP
+// ==========================================
+
+.phoneImage {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: min(100%, 320px);
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 25px 35px rgba(26, 50, 42, 0.18));
+  animation: phoneFloat 5s ease-in-out infinite;
+}
+
+@keyframes phoneFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+// ==========================================
+// OTHER SECTION HELPERS
+// ==========================================
+
+.sectionIntro .eyebrow {
+  justify-content: center;
+}
+
+.readingCopy .eyebrow {
+  margin-bottom: 19px;
+}
+
+.listeningCopy .eyebrow {
+  margin-bottom: 19px;
+}
+
+.syncCopy .eyebrow {
+  margin-bottom: 19px;
+  color: var(--color-brand-200);
+}
+
+.downloadSection .eyebrow {
+  justify-content: center;
+}
+
+// ==========================================
+// RESPONSIVE: TABLET
+// ==========================================
+
+@media (max-width: 1000px) {
+  .hero {
+    grid-template-columns: minmax(0, 0.9fr) minmax(350px, 1fr);
+    gap: 28px;
+  }
+
+  .hero h1 {
+    font-size: clamp(52px, 7vw, 68px);
+  }
+
+  .heroOrb {
+    width: 370px;
+    height: 370px;
+  }
+
+  .heroVisual {
+    min-height: 530px;
+  }
+
+  .phoneImage {
+    width: min(100%, 250px);
+  }
+}
+
+// ==========================================
+// RESPONSIVE: MOBILE
+// ==========================================
+
+@media (max-width: 720px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding-top: 54px;
+    padding-bottom: 30px;
+  }
+
+  .heroCopy {
+    max-width: 570px;
+  }
+
+  .hero h1 {
+    font-size: clamp(54px, 11vw, 72px);
+    letter-spacing: -3px;
+  }
+
+  .heroDescription {
+    max-width: 500px;
+    font-size: var(--text-md);
+  }
+
+  .heroNote {
+    margin-top: 29px;
+  }
+
+  .heroVisual {
+    min-height: 520px;
+  }
+
+  .heroOrb {
+    width: 400px;
+    height: 400px;
+  }
+
+  .phoneImage {
+    width: min(100%, 280px);
+  }
+}
+
+// ==========================================
+// RESPONSIVE: SMALL MOBILE
+// ==========================================
+
+@media (max-width: 425px) {
+  .hero {
+    padding-top: 42px;
+  }
+
+  .hero h1 {
+    font-size: 52px;
+  }
+
+  .heroActions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 17px;
+  }
+
+  .heroVisual {
+    min-height: 450px;
+    margin: -5px -12px 0;
+  }
+
+  .heroOrb {
+    width: 310px;
+    height: 310px;
+  }
+
+  .phoneImage {
+    width: min(100%, 340px);
+  }
+}
+
+// ==========================================
+// ACCESSIBILITY
+// ==========================================
+
+@media (prefers-reduced-motion: reduce) {
+  .primaryButton {
+    transition: none;
+  }
+
+  .phoneImage {
+    animation: none;
+  }
+}

@@ -1,0 +1,8 @@
+.mainWrapper {
+  max-width: 900px;
+  margin: auto;
+  padding: 0px var(--mainPadding) var(--mainPadding);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4xl);
+}

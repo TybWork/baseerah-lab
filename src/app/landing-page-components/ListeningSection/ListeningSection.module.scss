@@ -1,0 +1,285 @@
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  color: var(--color-brand-600);
+  font-size: 11px;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 1.45px;
+}
+
+.inlineLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-lg);
+  text-decoration: none;
+  font-weight: var(--font-weight-semibold);
+}
+
+.audioProgress {
+  height: 4px;
+  overflow: hidden;
+  border-radius: 99px;
+  background: var(--color-neutral-200);
+}
+
+.sectionIntro .eyebrow { justify-content: center; }
+
+.listeningCopy h2 {
+  color: var(--color-neutral-900);
+  font-size: clamp(32px, 4vw, 46px);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: -1.8px;
+  line-height: 1.14;
+}
+
+.listeningSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: clamp(55px, 9vw, 125px);
+  max-width: 1440px;
+  min-height: 570px;
+  margin: 0 auto;
+  padding: 85px var(--mainPadding);
+}
+
+.readingCopy .eyebrow { margin-bottom: 19px; }
+
+.listeningCopy .eyebrow { margin-bottom: 19px; }
+
+.syncCopy .eyebrow { margin-bottom: 19px; }
+
+.listeningCopy h2 { max-width: 510px; }
+
+.listeningCopy > p {
+  max-width: 500px;
+  margin-top: 20px;
+  color: var(--color-neutral-600);
+  font-size: var(--text-md);
+  line-height: 1.8;
+}
+
+.inlineLink {
+  color: var(--color-brand-600);
+  font-size: var(--text-sm);
+}
+
+.inlineLink:hover { color: var(--color-brand-800); }
+
+.listeningSection {
+  background: var(--color-white);
+}
+
+.listeningCopy { order: 2; }
+
+.playerCard {
+  width: min(100%, 410px);
+  justify-self: center;
+  padding: 26px;
+  border: 1px solid var(--color-neutral-100);
+  border-radius: 21px;
+  background: linear-gradient(150deg, var(--color-neutral-25), #fff 60%);
+  box-shadow: 0 20px 55px rgba(32, 59, 49, .09);
+}
+
+.playerHeader {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-neutral-500);
+  font-size: 8px;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 1px;
+}
+
+.liveDot {
+  width: 5px;
+  height: 5px;
+  margin-left: 4px;
+  border-radius: 50%;
+  background: var(--color-brand-400);
+}
+
+.playerSurah {
+  margin-top: 23px;
+  color: var(--color-brand-800);
+  font-family: Georgia, serif;
+  font-size: 29px;
+  text-align: center;
+}
+
+.playerSurahName {
+  margin-top: 7px;
+  color: var(--color-neutral-800);
+  font-size: 13px;
+  font-weight: var(--font-weight-semibold);
+  text-align: center;
+}
+
+.playerSurahName span {
+  color: var(--color-neutral-500);
+  font-size: 10px;
+  font-weight: var(--font-weight-regular);
+}
+
+.waveform {
+  display: flex;
+  height: 57px;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.waveform i {
+  width: 3px;
+  max-height: 42px;
+  border-radius: 5px;
+  background: var(--color-brand-200);
+}
+
+.waveform i:nth-child(-n+15) { background: var(--color-brand-500); }
+
+.audioProgress {
+  position: relative;
+  height: 3px;
+  margin-top: 6px;
+}
+
+.audioProgress span {
+  display: block;
+  width: 52%;
+  height: 100%;
+  background: var(--color-brand-500);
+}
+
+.audioTimes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+  color: var(--color-neutral-400);
+  font-size: 8px;
+}
+
+.playerControls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 26px;
+  margin: 16px 0 20px;
+}
+
+.controlButton {
+  display: grid;
+  place-items: center;
+  border: 0;
+  cursor: pointer;
+}
+
+.bigPlay {
+  display: grid;
+  place-items: center;
+  border: 0;
+  cursor: pointer;
+}
+
+.controlButton {
+  background: transparent;
+  color: var(--color-neutral-500);
+  font-size: 11px;
+  letter-spacing: -3px;
+}
+
+.bigPlay {
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  background: var(--color-brand-500);
+  color: var(--color-white);
+}
+
+.reciterDivider {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  border-top: 1px solid var(--color-neutral-100);
+  color: var(--color-neutral-500);
+  font-size: 8px;
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: .8px;
+}
+
+.reciterDivider span:last-child {
+  color: var(--color-brand-500);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 0;
+}
+
+.reciterList { margin-top: 8px; }
+
+.reciterRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 0;
+}
+
+.reciterAvatar {
+  display: grid;
+  width: 31px;
+  height: 31px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--color-neutral-100);
+  color: var(--color-neutral-600);
+  font-size: 15px;
+}
+
+.selectedAvatar { background: var(--color-brand-50); color: var(--color-brand-700); }
+
+.reciterText { flex: 1; }
+
+.reciterText strong { display: block; }
+
+.reciterText small { display: block; }
+
+.reciterText strong {
+  color: var(--color-neutral-800);
+  font-size: 9px;
+  font-weight: var(--font-weight-semibold);
+}
+
+.reciterText small {
+  margin-top: 3px;
+  color: var(--color-neutral-500);
+  font-size: 8px;
+}
+
+.selectedCheck {
+  color: var(--color-brand-500);
+  font-size: 12px;
+  font-weight: var(--font-weight-bold);
+}
+
+.syncCopy .eyebrow { color: var(--color-brand-200); }
+
+.downloadSection .eyebrow { justify-content: center; }
+
+@media (max-width: 720px) {
+.listeningSection {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding-top: 66px;
+    padding-bottom: 68px;
+  }
+.listeningCopy { order: -1; }
+.playerCard { justify-self: center; }
+}
+
+@media (max-width: 425px) {
+.listeningCopy h2 { font-size: 32px; letter-spacing: -1.2px; }
+.playerCard { padding: 21px 17px; }
+}

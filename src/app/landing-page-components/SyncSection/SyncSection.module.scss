@@ -1,0 +1,204 @@
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  color: var(--color-brand-600);
+  font-size: 11px;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 1.45px;
+}
+
+.sectionIntro .eyebrow {
+  justify-content: center;
+}
+
+.syncCopy h2 {
+  color: var(--color-neutral-900);
+  font-size: clamp(32px, 4vw, 46px);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: -1.8px;
+  line-height: 1.14;
+}
+
+.readingCopy .eyebrow {
+  margin-bottom: 19px;
+}
+
+.listeningCopy .eyebrow {
+  margin-bottom: 19px;
+}
+
+.syncCopy .eyebrow {
+  margin-bottom: 19px;
+}
+
+.syncCopy > p {
+  margin-top: 20px;
+  color: var(--color-neutral-600);
+  font-size: var(--text-md);
+  line-height: 1.8;
+}
+
+.syncSection {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto minmax(300px, 0.95fr) minmax(300px, 1.05fr);
+  align-items: center;
+  gap: 26px;
+  max-width: 1440px;
+  min-height: 345px;
+  margin: 0 auto;
+  padding: 60px var(--mainPadding);
+  overflow: hidden;
+  background: var(--color-brand-900);
+}
+
+.syncBadge {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  align-self: start;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 14px;
+  color: var(--color-warning-300);
+}
+
+.syncCopy .eyebrow {
+  color: var(--color-brand-200);
+}
+
+.syncCopy h2 {
+  color: var(--color-white);
+  font-size: clamp(28px, 3.2vw, 39px);
+}
+
+.syncCopy > p {
+  color: rgba(255, 255, 255, 0.68);
+  font-size: var(--text-sm);
+}
+
+.syncVisual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 160px;
+  padding: 0 8px;
+}
+
+.syncLine {
+  position: absolute;
+  top: 50%;
+  right: 42px;
+  left: 42px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.26);
+}
+
+.syncNode {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  justify-items: center;
+  gap: 9px;
+  color: var(--color-brand-100);
+  font-size: 9px;
+}
+
+.syncCenter {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  justify-items: center;
+  gap: 9px;
+  color: var(--color-brand-100);
+  font-size: 9px;
+}
+
+.syncNode svg {
+  box-sizing: content-box;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  background: var(--color-brand-900);
+  color: var(--color-brand-200);
+}
+
+.syncCenter {
+  width: 118px;
+  height: 118px;
+  align-content: center;
+  gap: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  background: #075540;
+}
+
+.googleG {
+  color: var(--color-warning-300);
+  font-size: 27px;
+  font-weight: var(--font-weight-bold);
+}
+
+.syncCenter strong {
+  color: var(--color-white);
+  font-size: 9px;
+  font-weight: var(--font-weight-medium);
+}
+
+.syncCenter small {
+  color: var(--color-brand-200);
+  font-size: 8px;
+}
+
+.downloadSection .eyebrow {
+  justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  .syncSection {
+    grid-template-columns: auto 1fr;
+  }
+  .syncVisual {
+    grid-column: 2;
+    max-width: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .syncSection {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding-top: 55px;
+    padding-bottom: 45px;
+  }
+  .syncBadge {
+    width: 42px;
+    height: 42px;
+  }
+  .syncVisual {
+    grid-column: 1;
+    width: 100%;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .syncCopy h2 {
+    font-size: 32px;
+    letter-spacing: -1.2px;
+  }
+  .syncVisual {
+    gap: 5px;
+    padding: 0;
+  }
+  .syncCenter {
+    width: 100px;
+    height: 100px;
+  }
+  .syncNode {
+    font-size: 8px;
+  }
+}

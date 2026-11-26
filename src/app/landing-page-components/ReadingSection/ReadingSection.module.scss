@@ -1,0 +1,252 @@
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  color: var(--color-brand-600);
+  font-size: 11px;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 1.45px;
+}
+
+.inlineLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-lg);
+  text-decoration: none;
+  font-weight: var(--font-weight-semibold);
+}
+
+.sectionIntro .eyebrow { justify-content: center; }
+
+.readingCopy h2 {
+  color: var(--color-neutral-900);
+  font-size: clamp(32px, 4vw, 46px);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: -1.8px;
+  line-height: 1.14;
+}
+
+.readingSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: clamp(55px, 9vw, 125px);
+  max-width: 1440px;
+  min-height: 570px;
+  margin: 0 auto;
+  padding: 85px var(--mainPadding);
+}
+
+.readingSection { background: var(--color-neutral-50); }
+
+.readingVisual {
+  position: relative;
+  display: grid;
+  min-height: 390px;
+  place-items: center;
+}
+
+.readingVisual::before {
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  background: var(--color-brand-50);
+  content: "";
+}
+
+.readingCard {
+  position: relative;
+  width: min(100%, 390px);
+  padding: 24px 26px 20px;
+  border: 1px solid rgba(0, 103, 78, .1);
+  border-radius: 18px;
+  background: var(--color-white);
+  box-shadow: 0 20px 55px rgba(32, 59, 49, .1);
+  transform: rotate(-2deg);
+}
+
+.readingCardTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--color-neutral-500);
+  font-size: 9px;
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 1px;
+}
+
+.readingCardTop svg { color: var(--color-brand-500); }
+
+.verseArabic {
+  margin-top: 31px;
+  color: var(--color-brand-800);
+  font-family: Georgia, serif;
+  font-size: 26px;
+  line-height: 1.9;
+  text-align: center;
+}
+
+.verseDivider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 16px 0;
+  color: var(--color-warning-500);
+  font-size: 14px;
+}
+
+.verseDivider::before {
+  height: 1px;
+  flex: 1;
+  background: var(--color-neutral-100);
+  content: "";
+}
+
+.verseDivider::after {
+  height: 1px;
+  flex: 1;
+  background: var(--color-neutral-100);
+  content: "";
+}
+
+.readingCard > p {
+  color: var(--color-neutral-700);
+  font-family: Georgia, serif;
+  font-size: 15px;
+  line-height: 1.75;
+  text-align: center;
+}
+
+.translationLabel {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+  color: var(--color-neutral-400);
+  font-size: 8px;
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: .8px;
+}
+
+.translationLabel span {
+  color: var(--color-brand-600);
+  font-size: 8px;
+}
+
+.tafseerNote {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-top: 19px;
+  padding: 13px 0 0;
+  border-top: 1px solid var(--color-neutral-100);
+  color: var(--color-brand-500);
+}
+
+.tafseerAccent {
+  width: 3px;
+  height: 29px;
+  border-radius: 4px;
+  background: var(--color-warning-400);
+}
+
+.tafseerNote strong { display: block; }
+
+.tafseerNote small { display: block; }
+
+.tafseerNote strong {
+  color: var(--color-neutral-800);
+  font-size: 10px;
+  font-weight: var(--font-weight-semibold);
+}
+
+.tafseerNote small {
+  margin-top: 3px;
+  color: var(--color-neutral-500);
+  font-size: 8px;
+}
+
+.tafseerNote > svg { margin-left: auto; }
+
+.readingDecoration {
+  position: absolute;
+  right: 11%;
+  bottom: 13%;
+  color: rgba(0, 103, 78, .13);
+  font-size: 57px;
+}
+
+.readingCopy .eyebrow { margin-bottom: 19px; }
+
+.listeningCopy .eyebrow { margin-bottom: 19px; }
+
+.syncCopy .eyebrow { margin-bottom: 19px; }
+
+.readingCopy h2 { max-width: 510px; }
+
+.readingCopy > p {
+  max-width: 500px;
+  margin-top: 20px;
+  color: var(--color-neutral-600);
+  font-size: var(--text-md);
+  line-height: 1.8;
+}
+
+.checkList {
+  display: grid;
+  gap: 14px;
+  margin: 25px 0 27px;
+  padding: 0;
+  list-style: none;
+}
+
+.checkList li {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: var(--color-neutral-700);
+  font-size: var(--text-sm);
+}
+
+.checkList li span {
+  display: grid;
+  width: 19px;
+  height: 19px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--color-brand-100);
+  color: var(--color-brand-700);
+  font-size: 12px;
+  font-weight: var(--font-weight-bold);
+}
+
+.inlineLink {
+  color: var(--color-brand-600);
+  font-size: var(--text-sm);
+}
+
+.inlineLink:hover { color: var(--color-brand-800); }
+
+.syncCopy .eyebrow { color: var(--color-brand-200); }
+
+.downloadSection .eyebrow { justify-content: center; }
+
+@media (max-width: 720px) {
+.readingSection {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding-top: 66px;
+    padding-bottom: 68px;
+  }
+.readingVisual { min-height: 370px; }
+.readingCopy { order: -1; }
+}
+
+@media (max-width: 425px) {
+.readingCopy h2 { font-size: 32px; letter-spacing: -1.2px; }
+.readingVisual { min-height: 330px; margin: 0 -7px; }
+.readingVisual::before { width: 285px; height: 285px; }
+.readingCard { padding: 19px 18px 16px; }
+.verseArabic { margin-top: 23px; font-size: 22px; }
+}
