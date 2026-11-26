@@ -50,7 +50,7 @@ export function HeroSection() {
         <div className={styles.heroOrb} />
 
         <Image
-          src="/images/baseerah-app-mockup.png"
+          src="/images/baseerah-app-mockup.webp"
           alt="Baseerah Quran mobile application displayed on a smartphone"
           className={styles.phoneImage}
           width={0}
