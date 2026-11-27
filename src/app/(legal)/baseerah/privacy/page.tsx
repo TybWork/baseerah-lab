@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
       <LegalContent>
         <LegalContent.MainHeader
           heading="Privacy Policy"
-          operatedBy="Baseerah Labs"
+          operatedBy="baseerah labs & Tybwork"
           effectiveDate="November 2026"
           lastReviewed="November 2026"
         />
@@ -36,7 +36,7 @@ const PrivacyPolicy = () => {
 
           <LegalContent.P>
             Baseerah is a Quran and Islamic lifestyle application developed and
-            operated by Baseerah Labs.
+            operated by baseerah labs & Tybwork.
           </LegalContent.P>
 
           <LegalContent.P>
@@ -45,7 +45,7 @@ const PrivacyPolicy = () => {
           </LegalContent.P>
 
           <LegalContent.P>
-            <strong>Company:</strong> Baseerah Labs
+            <strong>Company:</strong> baseerah labs & Tybwork
           </LegalContent.P>
 
           <LegalContent.P>
@@ -435,19 +435,27 @@ const PrivacyPolicy = () => {
           </LegalContent.P>
 
           <LegalContent.P>
-            You may request access to, correction of, or deletion of personal
-            information associated with your account by contacting us at:
+            Users can delete their Baseerah accounts directly from within the
+            application using the Delete Account option available in the app
+            settings. Upon completion of the deletion process, associated
+            account information and personal data will be deleted from our
+            backend systems, subject to applicable legal obligations and data
+            retention requirements.
+          </LegalContent.P>
+
+          <LegalContent.P>
+            Deleting the application from your device does not automatically
+            delete information already synchronized with our backend. Users must
+            use the in-app Delete Account option to request account deletion.
+          </LegalContent.P>
+
+          <LegalContent.P>
+            If you experience any issues with the account deletion process, you
+            may contact us at:
           </LegalContent.P>
 
           <LegalContent.P>
             <a href="mailto:hi@tybwork.com">hi@tybwork.com</a>
-          </LegalContent.P>
-
-          <LegalContent.P>
-            Deleting the application from your device does not necessarily
-            delete information already synchronized with our backend.
-            Account-related deletion requests may require verification before
-            processing.
           </LegalContent.P>
         </LegalContent>
 
@@ -554,7 +562,7 @@ const PrivacyPolicy = () => {
           </LegalContent.P>
 
           <LegalContent.P>
-            <strong>Company:</strong> Baseerah Labs
+            <strong>Company:</strong> baseerah labs & Tybwork
           </LegalContent.P>
 
           <LegalContent.P>
